@@ -31,7 +31,7 @@ pub fn server() -> std::io::Result<()> {
                 Err(e) => println!("{:?}", e),
             },
             Err(e) => {
-                return Err(Error::other(e));
+                println!("{:?}", e)
             }
         }
     }
